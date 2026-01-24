@@ -1,0 +1,3 @@
+To run Tailwind CSS:
+npm install -D tailwindcss @tailwindcss/vite
+npm run dev
