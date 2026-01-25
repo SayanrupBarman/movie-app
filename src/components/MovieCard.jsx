@@ -1,23 +1,61 @@
-
-
 import { Link } from "react-router-dom";
-function MovieCard({movie}){
-// const MovieCard = ({ movie }) => {
+import { RxCross1 } from "react-icons/rx";
+import { TiTick } from "react-icons/ti";
+import { FaPlus } from "react-icons/fa";
+
+function MovieCard({
+  movie,
+  isFavorite,
+  toggleFavorite,
+  showRemoveOnHover = false,
+}) {
   return (
-    <Link to={`/movie/${movie.imdbID}`}>
-      <div className="bg-zinc-800 rounded overflow-hidden hover:scale-120 transition">
+    <div
+      className="relative group bg-gray-900 rounded overflow-hidden
+                 transform transition duration-300 hover:scale-105"
+    >
+      {/* Poster */}
+      <Link to={`/movie/${movie.imdbID}`}>
         <img
-          src={movie.Poster  !== "N/A" ? movie.Poster : "/no-image.png"}
+          src={movie.Poster !== "N/A" ? movie.Poster : "/no-image.png"}
           alt={movie.Title}
-          className="h-64 w-full object-cover"
+          className="w-full h-64 object-cover"
         />
-        <div className="p-2">
-          <h3 className="text-sm font-semibold mt-2 mb-3">{movie.Title}</h3>
-          <p className="text-xs text-gray-400 mb-3">{movie.Year}</p>
-        </div>
+      </Link>
+
+      {/* Info */}
+      <div className="p-2">
+        <h3 className="text-sm font-semibold">{movie.Title}</h3>
+        <p className="text-xs text-gray-400">{movie.Year}</p>
       </div>
-    </Link>
+
+      {/* ⭐ FAVORITE / REMOVE — SHOW ONLY ON HOVER */}
+      {isFavorite && (
+        <button
+          onClick={toggleFavorite}
+          className="
+            absolute bottom-2 right-2
+            flex items-center gap-1
+            bg-gray-600 text-white text-xs px-3 py-2 rounded-l
+            opacity-0 group-hover:opacity-100
+            transition duration-300
+          "
+        >
+          {showRemoveOnHover ? (
+            <>
+              <TiTick className="text-sm" />
+              Remove
+            </>
+          ) : (
+            <>
+              <FaPlus className="text-sm" />
+              Favorited
+            </>
+          )}
+        </button>
+      )}
+    </div>
   );
-};
+}
 
 export default MovieCard;

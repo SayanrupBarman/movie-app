@@ -1,37 +1,15 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./pages/Home";
-// import MovieDetails from "./pages/MovieDetails";
-// import Navbar from "./components/Navbar";
-
-// function App() {
-// return (
-// <BrowserRouter>
-// <Routes>
-// <Route path="/" element={<Home />} />
-// <Route path="/movie/:id" element={<MovieDetails />} />
-// </Routes>
-// </BrowserRouter>
-// );
-// }
-// export default App;
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
-
-
-
-
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie/:id" element={<MovieDetails />} />
-       
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/movie/:id" element={<MovieDetails />} />
+      <Route path="/favorites" element={<Favorites />} />
+    </Routes>
   );
 }
 
