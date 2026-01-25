@@ -1,4 +1,4 @@
-🎬 Movies Search App
+# 🎬 Movies Search App
 
 A full-featured Movie Search Application built with React.js that integrates with the OMDB API.
 Users can search for movies, filter by type, view detailed movie information, paginate results, and manage a list of favorite movies.
