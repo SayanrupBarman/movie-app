@@ -1,16 +1,201 @@
-# React + Vite
+🎬 Movies Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured Movie Search Application built with React.js that integrates with the OMDB API.
+Users can search for movies, filter by type, view detailed movie information, paginate results, and manage a list of favorite movies.
 
-Currently, two official plugins are available:
+🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Search movies by title or keyword
 
-## React Compiler
+🎞️ Filter movies by type (Movie / Series / Episode) using OMDB API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📄 Pagination for large result sets
 
-## Expanding the ESLint configuration
+📌 View detailed movie information
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❤️ Add & remove movies from Favorites
+
+💾 Favorites persisted using Local Storage
+
+🧭 Client-side routing using React Router
+
+⚠️ Graceful error handling & empty state handling
+
+🎨 Responsive UI styled with Tailwind CSS
+
+🛠️ Tech Stack
+
+React.js
+
+React Router
+
+JavaScript (ES6+)
+
+Tailwind CSS
+
+HTML & CSS
+
+OMDB API
+
+📁 Project Structure
+src/
+│
+├── components/
+│   ├── Filter.jsx
+│   ├── MovieCard.jsx
+│   ├── Navbar.jsx
+│   ├── Pagination.jsx
+│   └── SearchBar.jsx
+│
+├── context/
+│   └── FavoritesContext.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── MovieDetails.jsx
+│   └── Favorites.jsx
+│
+├── services/
+│   └── omdbApi.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+🔑 Environment Setup
+1️⃣ Get OMDB API Key
+
+Create an account at 👉 https://www.omdbapi.com/apikey.aspx
+
+Copy your API key.
+
+2️⃣ Create .env file
+VITE_OMDB_API_KEY=your_api_key_here
+
+
+⚠️ Make sure the variable name starts with VITE_ (required by Vite).
+
+📦 Installation & Run Locally
+# Clone the repository
+git clone https://github.com/your-username/movies-search-app.git
+
+# Navigate to project folder
+cd movies-search-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
+App will run on:
+👉 http://localhost:5173
+
+🧭 Routing Overview
+Route	Description
+/	Home page – Search & browse movies
+/movie/:id	Movie details page
+/favorites	Favorites page
+🔍 Core Functionalities
+🔎 Search Movies
+
+Uses OMDB s endpoint
+
+Real-time search via input field
+
+Displays results in a responsive grid
+
+🎯 Filter by Type
+
+Dropdown filter using OMDB type parameter
+
+Filters results via API (no array.filter() used)
+
+📄 Pagination
+
+Handles large datasets
+
+Uses OMDB page parameter
+
+Next & Previous navigation
+
+📌 Movie Details
+
+Fetches detailed data using OMDB i endpoint
+
+Displays:
+
+Poster
+
+Title
+
+Year
+
+Genre
+
+Director
+
+Cast
+
+Plot
+
+Ratings
+
+❤️ Favorites Management
+
+Add/remove favorites from:
+
+Home page
+
+Movie details page
+
+Stored in localStorage
+
+Favorite count badge shown in navbar
+
+⚠️ Error Handling
+
+API errors handled gracefully
+
+Displays user-friendly messages when:
+
+No results found
+
+Invalid API response
+
+Loading state handled for movie details
+
+🎨 UI & Styling
+
+Built using Tailwind CSS
+
+Fully responsive layout
+
+Hover animations on movie cards
+
+Blurred poster background on movie details page
+
+Clean and modern UI inspired by streaming platforms
+
+📌 Future Enhancements (Optional)
+
+⭐ Ratings-based sorting
+
+🎭 Genre-based filtering
+
+🔐 Authentication
+
+☁️ Cloud-based favorites storage
+
+🎥 Trailer integration
+
+📜 License
+
+This project is for educational purposes and personal learning.
+OMDB data is provided by OMDB API.
+
+👩‍💻 Author
+
+Kanesha K
+Software Engineer
