@@ -23,7 +23,7 @@ Users can search for movies, filter by type, view detailed movie information, pa
 
 🎨 Responsive UI styled with Tailwind CSS
 
-🛠️ Tech Stack
+# Tech Stack
 
 React.js
 
@@ -33,36 +33,16 @@ JavaScript (ES6+)
 
 Tailwind CSS
 
-HTML & CSS
+HTML
+
+React Router Dom
+
+React Icons
 
 OMDB API
 
-📁 Project Structure
-src/
-│
-├── components/
-│   ├── Filter.jsx
-│   ├── MovieCard.jsx
-│   ├── Navbar.jsx
-│   ├── Pagination.jsx
-│   └── SearchBar.jsx
-│
-├── context/
-│   └── FavoritesContext.jsx
-│
-├── pages/
-│   ├── Home.jsx
-│   ├── MovieDetails.jsx
-│   └── Favorites.jsx
-│
-├── services/
-│   └── omdbApi.js
-│
-├── App.jsx
-├── main.jsx
-└── index.css
-
 🔑 Environment Setup
+
 1️⃣ Get OMDB API Key
 
 Create an account at 👉 https://www.omdbapi.com/apikey.aspx
@@ -70,12 +50,11 @@ Create an account at 👉 https://www.omdbapi.com/apikey.aspx
 Copy your API key.
 
 2️⃣ Create .env file
+
 VITE_OMDB_API_KEY=your_api_key_here
 
-
-⚠️ Make sure the variable name starts with VITE_ (required by Vite).
-
 📦 Installation & Run Locally
+
 # Clone the repository
 git clone https://github.com/your-username/movies-search-app.git
 
@@ -90,29 +69,36 @@ npm run dev
 
 
 App will run on:
+
 👉 http://localhost:5173
 
-🧭 Routing Overview
+# Routing Overview
+
 Route	Description
+
 /	Home page – Search & browse movies
-/movie/:id	Movie details page
-/favorites	Favorites page
-🔍 Core Functionalities
+
+/movie/:id -	Movie details page
+
+/favorites -	Favorites page
+
+# Core Functionalities
+
 🔎 Search Movies
 
-Uses OMDB s endpoint
+Uses OMDBs endpoint
 
 Real-time search via input field
 
 Displays results in a responsive grid
 
-🎯 Filter by Type
+# Filter by Type
 
 Dropdown filter using OMDB type parameter
 
 Filters results via API (no array.filter() used)
 
-📄 Pagination
+# Pagination
 
 Handles large datasets
 
@@ -190,12 +176,9 @@ Clean and modern UI inspired by streaming platforms
 
 🎥 Trailer integration
 
-📜 License
-
-This project is for educational purposes and personal learning.
-OMDB data is provided by OMDB API.
 
 👩‍💻 Author
 
 Kanesha K
+
 Software Engineer
