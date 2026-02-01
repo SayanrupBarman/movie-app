@@ -18,6 +18,7 @@ function Home() {
 
   // Fetch movies from API
   useEffect(() => {
+
     searchMovies(query, page, type).then((data) => {
       if (data.Response === "False") {
         setError(data.Error);

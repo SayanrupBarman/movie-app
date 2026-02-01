@@ -29,31 +29,31 @@ function MovieCard({
         <p className="text-xs text-gray-400">{movie.Year}</p>
       </div>
 
-      {/* ⭐ FAVORITE / REMOVE — SHOW ONLY ON HOVER */}
-      {isFavorite && (
-        <button
-          onClick={toggleFavorite}
-          className="
-            absolute bottom-2 right-2
-            flex items-center gap-1
-            bg-gray-600 text-white text-xs px-3 py-2 rounded-l
-            opacity-0 group-hover:opacity-100
-            transition duration-300
-          "
-        >
-          {showRemoveOnHover ? (
-            <>
-              <TiTick className="text-sm" />
-              Remove
-            </>
-          ) : (
-            <>
-              <FaPlus className="text-sm" />
-              Favorited
-            </>
-          )}
-        </button>
-      )}
+
+      {/* ⭐ FAVORITE BUTTON — SHOW ON HOVER FOR ALL CARDS */}
+<button
+  onClick={toggleFavorite}
+  className="
+    absolute bottom-2 right-2
+    flex items-center gap-1
+    bg-gray-600 text-white text-xs px-3 py-2 rounded
+    opacity-0 group-hover:opacity-100
+    transition duration-300
+  "
+>
+  {isFavorite ? (
+    <>
+      <TiTick className="text-sm" />
+      Remove
+    </>
+  ) : (
+    <>
+      <FaPlus className="text-sm" />
+      Add
+    </>
+  )}
+</button>
+
     </div>
   );
 }

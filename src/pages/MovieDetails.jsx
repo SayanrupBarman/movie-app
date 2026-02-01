@@ -28,7 +28,7 @@ function MovieDetails() {
   }, [favorites]);
 
   const isFavorite = favorites.some(
-    (fav) => fav.imdbID === movie?.imdbID
+    (fav) => fav.imdbID === movie?.imdbID //optional chaining
   );
 
   const toggleFavorite = () => {
